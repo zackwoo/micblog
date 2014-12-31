@@ -6,8 +6,6 @@
 micblog项目Blog地址：<http://micblog.coding.io/>   
 
 
-micblog源码地址：<https://coding.net/u/zackwoo/p/micblog/git>
-
 
 ###Micblog 介绍
 micblog是基于Node.js的静态博客系统。  
