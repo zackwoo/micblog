@@ -1,0 +1,10 @@
+{
+    "title": "micblog",
+    "author": "zachary",
+    "keywords": ["micblog", "zack"],
+    "description": "micblog静态博客系统",
+    "copyright": {
+        "beginYear": 2014,
+        "endYear": 2015
+    }
+}

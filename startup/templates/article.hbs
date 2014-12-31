@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+{{> header}}
+<body>
+    {{> banner navigation}}
+    <div class="container">
+        <h1>{{article.title}}</h1>
+        {{{article.content}}}
+        <div class="article-footer">
+            {{> article_footer article}}
+        </div>
+    </div>
+    {{> footer}}
+</body>
+
+</html>

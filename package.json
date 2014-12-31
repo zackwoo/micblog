@@ -1,0 +1,36 @@
+{
+  "name": "micblog",
+  "version": "1.1.5",
+  "description": "静态博客系统",
+  "bin": {
+    "micblog": "./lib/main.js"
+  },
+  "scripts": {
+    "test": "mocha ./test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@coding.net:zackwoo/Page.git"
+  },
+  "keywords": [
+    "nodejs",
+    "markdown",
+    "handerbars"
+  ],
+  "author": "zachary.woo",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.6.0",
+    "connect": "^3.3.3",
+    "fs-extra": "^0.13.0",
+    "handlebars": "^2.0.0",
+    "highlight.js": "^8.4.0",
+    "marked": "^0.3.2",
+    "serve-static": "^1.7.1",
+    "underscore": "^1.7.0"
+  },
+  "devDependencies": {
+    "chai": "^1.10.0",
+    "mocha": "^2.1.0"
+  }
+}

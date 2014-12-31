@@ -1,14 +1,3 @@
-#Micblog 静态博客系统
-[![NPM Version](http://img.shields.io/npm/v/micblog.svg?style=flat)](https://www.npmjs.org/package/micblog)
-[![NPM Downloads](https://img.shields.io/npm/dm/micblog.svg?style=flat)](https://www.npmjs.org/package/micblog)
-
-
-micblog项目Blog地址：<http://micblog.coding.io/>   
-
-
-micblog源码地址：<https://coding.net/u/zackwoo/p/micblog/git>
-
-
 ###Micblog 介绍
 micblog是基于Node.js的静态博客系统。  
 模板采用Handlebars，同时支持Markdown语法进行写作。  
@@ -61,10 +50,4 @@ micblog test
 ```   
 启动浏览器打开 http://localhost:8001/ 可浏览网站效果
 
-###Micblog 如何免费部署个人站点  
-请参考[micblog 部署到coding.net](http://micblog.coding.io/articles/micblogDeploy.html)
-
-
-###Micblog 如何安装插件
-请参考[项目博客#插件](http://micblog.coding.io/tags.html#%E6%8F%92%E4%BB%B6)
 
