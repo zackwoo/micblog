@@ -10,33 +10,40 @@ strong {
 }
 /*头尾*/
 
-header {
+div.gravatar {
+    padding-top: 50px;
+}
+div.gravatar img {
+    width: 80px;
+    height: 80px;
+    border-radius: 3em;
+}
+div.account {
+    padding-top: 20px;
+}
+div.account ul {
+    padding: 0px;
+}
+div.account span {
+    font-size: 1.2em;
+    font-weight: 700;
+    cursor: pointer;
+}
+div#left-bar span.title {
+    color: #989898;
+    font-size: 1.5em;
+    font-weight: 900;
+    display: block;
     margin-bottom: 20px;
 }
-header nav {
-    height: 60px;
-    border-bottom: 1px solid #ccc;
+div.Category ul {
+    list-style:disc;
+    line-height: 2.2em;
+    color: #989898;
 }
-nav ul,
-nav ul li,
-nav ul li a {
-    height: 100%;
-}
-header li {
-    display: block;
-    float: left;
-}
-header li a {
-    display: block;
-    font-size: 1.5em;
-    font-weight: bold;
-    line-height: 60px;
-    margin-right: 30px
-}
-header li a:hover,
-header li a.active {
+div.Category ul a{
     text-decoration: none;
-    border-bottom: 3px solid #0C79B5;
+    color: #4b4b4b;
 }
 footer p#copyright {
     border-top: 1px solid #ccc;
@@ -45,7 +52,7 @@ footer p#copyright {
 header nav,
 footer p#copyright,
 .container {
-    max-width: 100rem;
+    max-width: 110rem;
     padding-left: 1rem;
     padding-right: 1rem;
     margin-left: auto;

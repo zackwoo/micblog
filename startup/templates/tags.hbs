@@ -3,32 +3,39 @@
 {{> header}}
 
 <body>
-    {{> banner navigation}}
     <div class="container">
-        <div class="tag-clound">
-            {{#each tags}}
-            <a class="tag" href="#{{@key}}">
+        <div class="row">
+            <div class="col-md-3">
+                {{> banner tags}}
+            </div>
+            <div class="col-md-9">
+<!--
+                <div class="tag-clound">
+                    {{#each tags}}
+                    <a class="tag" href="#{{@key}}">
                 {{@key}}<span class="tag-count">×{{this.length}}</span>
             </a>
-            {{/each}}
-        </div>
-        <div class="tag-articles-container">
-            {{#each tags}}
-            <a class="tag-title" name="{{@key}}">
+                    {{/each}}
+                </div>
+-->
+                <div class="tag-articles-container">
+                    {{#each tags}}
+                    <a class="tag-title" name="{{@key}}">
                 {{@key}}
             </a>
-            <ul class="tag-ul">
-                {{#each this}}
-                <li>
-                    <a href="/articles/{{id}}.html">{{title}}</a>
-                </li>
-                {{/each}}
-            </ul>
-            {{/each}}
+                    <ul class="tag-ul">
+                        {{#each this}}
+                        <li>
+                            <a href="/articles/{{id}}.html">{{title}}</a>
+                        </li>
+                        {{/each}}
+                    </ul>
+                    {{/each}}
+                </div>
+            </div>
         </div>
     </div>
-    {{> footer}}
-    {{> footer_plugin}}
+    {{> footer}} {{> footer_plugin}}
 </body>
 
 </html>

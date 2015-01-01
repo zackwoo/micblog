@@ -1,9 +1,34 @@
-<header>
-    <nav>
+<div id="left-bar">
+    <div class="gravatar">
+        <a href="/">
+        <img src="/themes/default/image/icon.jpeg" />
+            </a>
+    </div>
+    <div class="account">
+        <ul>
+            <li><span><i class="fa fa-map-marker"></i> 上海&nbsp;&nbsp;zackwoo</span>
+            </li>
+            <li>
+                <span><i class="fa fa-github"></i> zackwoo</span>
+            </li>
+            <li><span><i class="fa fa-weibo"></i> 地有油</span>
+            </li>
+            <li><span><i class="fa fa-qq"></i> MZ</span>
+            </li>
+        </ul>
+    </div>
+    <hr></hr>
+    <div class="Category">
+        <span class="title">标签分类</span>
         <ul>
             {{#each this}}
-                <li><a href="{{href}}" class="{{#if active}}active{{/if}}">{{title}}</a></li>
-            {{/each}}            
+            <li>
+                <a class="tag" href="/tags.html#{{@key}}">
+                {{@key}}<span class="tag-count">×{{this.length}}</span>
+            </a>
+            </li>
+            {{/each}}
         </ul>
-    </nav>
-</header>
+
+    </div>
+</div>
