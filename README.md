@@ -6,7 +6,6 @@
 micblog项目Blog地址：<http://micblog.coding.io/>   
 
 
-
 ###Micblog 介绍
 micblog是基于Node.js的静态博客系统。  
 模板采用Handlebars，同时支持Markdown语法进行写作。  
@@ -40,7 +39,13 @@ _版本信息显示正确即安装完成_
 ###Micblog 如何创建网站  
 ```
 micblog create
+```
+或者   
+```
+micblog init
 ```   
+init与create拥有相同功能，从1.2.0版本开始加入，并且在生成完后自动执行build命令   
+
 在当前路径生成一个blog文件夹并包含必要的默认配置信息   
 
 ###Micblog 如何写作  
@@ -57,12 +62,16 @@ micblog build
 ```
 micblog test
 ```   
-启动浏览器打开 http://localhost:8001/ 可浏览网站效果
+启动浏览器打开 http://localhost:8001/ 可浏览网站效果   
 
 ###Micblog 如何免费部署个人站点  
-请参考[micblog 部署到coding.net](http://micblog.coding.io/articles/micblogDeploy.html)
-
+请参考[micblog 部署到coding.net](http://micblog.coding.io/articles/micblogDeploy.html)   
 
 ###Micblog 如何安装插件
-请参考[项目博客#插件](http://micblog.coding.io/tags.html#%E6%8F%92%E4%BB%B6)
+请参考[项目博客#插件](http://micblog.coding.io/tags.html#%E6%8F%92%E4%BB%B6)   
 
+###Micblog 如何更新版本     
+```
+micblog update
+```  
+将micblog更新至最新版本   
