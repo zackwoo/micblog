@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
 {{> header}}
+
 <body>
     <div class="container">
         <div class="row">
@@ -10,6 +11,15 @@
             <div class="col-md-9">
                 <h1>{{article.title}}</h1>
                 {{{article.content}}}
+                <hr>
+                <div class="row article-nav">
+                    <div class="col-md-6 prev">
+                        {{#if article.prev}}<i class="fa fa-arrow-left"></i> <a href="/articles/{{article.prev.id}}.html" title="上一篇">{{article.prev.title}}</a> {{/if}}
+                    </div>
+                    <div class="col-md-6 next">
+                        {{#if article.next}} <a href="/articles/{{article.next.id}}.html"  title="下一篇">{{article.next.title}}</a> <i class="fa fa-arrow-right"></i>{{else}}&nbsp;{{/if}}
+                    </div>
+                </div>
                 <div class="article-footer">
                     {{> article_footer_plugin article}}
                 </div>

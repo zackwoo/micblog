@@ -8,6 +8,9 @@ strong {
     font-size: 2em;
     color: #555;
 }
+.txt-r{
+    text-align: right;
+}
 /*头尾*/
 
 div.gravatar {
@@ -66,11 +69,6 @@ footer p#copyright,
 a.tag {
     padding: 0 5px;
 }
-div.tag-clound {
-    border: 1px dashed #555;
-    padding: 10px;
-    line-height: 2em;
-}
 div.tag-articles-container {
     margin: 20px 0;
 }
@@ -85,22 +83,11 @@ a.tag-title:hover {
 ul.tag-ul {
     margin-bottom: 30px;
 }
-div.tag-clound a.tag {
-    background: #864570;
-    margin-right: 10px;
-    padding: 5px 10px;
-    color: #fff;
-    border-radius: 0.5em;
-}
-div.tag-clound a.tag:hover {
-    text-decoration: none;
-}
 span.tag-count {
     padding-left: 3px;
     font-size: 0.95em;
 }
 /*首页文章列表*/
-
 li.article-item {
     border-bottom: 1px dashed #555;
     margin: 40px 0;
@@ -110,4 +97,15 @@ p.article-meta {
     height: 3em;
     line-height: 3em;
     text-align: right;
+}
+/*文章*/
+div.article-nav{
+    margin: 20px 0;
+}
+div.article-nav div.next{
+    text-align: right;
+    border-left: 1px solid #ccc;
+}
+div.article-nav a{
+    color: #333;
 }
