@@ -1,6 +1,7 @@
 {
     "title": "micblog",
     "author": "zachary",
+    "city":"上海",
     "keywords": ["micblog", "zack"],
     "description": "micblog静态博客系统",
     "copyright": {

@@ -6,22 +6,19 @@
     </div>
     <div class="account">
         <ul>
-            <li><span><i class="fa fa-map-marker"></i> 上海&nbsp;&nbsp;zackwoo</span>
-            </li>
-            <li>
-                <span><i class="fa fa-github"></i> zackwoo</span>
-            </li>
-            <li><span><i class="fa fa-weibo"></i> 地有油</span>
-            </li>
-            <li><span><i class="fa fa-qq"></i> MZ</span>
-            </li>
+            <li><span><i class="fa fa-map-marker"></i> {{city}}&nbsp;&nbsp;{{author}}</span></li>
+<!--
+            <li><span><i class="fa fa-github"></i> zackwoo</span></li>
+            <li><span><i class="fa fa-weibo"></i> 地有油</span></li>
+            <li><span><i class="fa fa-qq"></i> MZ</span></li>
+-->
         </ul>
     </div>
     <hr></hr>
     <div class="Category">
         <span class="title">标签分类</span>
         <ul>
-            {{#each this}}
+            {{#each this.tags}}
             <li>
                 <a class="tag" href="/tags.html#{{@key}}">
                 {{@key}}<span class="tag-count">×{{this.length}}</span>
