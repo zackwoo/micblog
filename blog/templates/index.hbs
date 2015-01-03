@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+{{> header}}
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                {{> banner}}
+            </div>
+            <div class="col-md-9">
+                <ul>
+                    {{#each articles}}
+                    <li class="article-item">
+                        <a href="/articles/{{this.id}}.html" class="h1">{{this.title}}</a>
+                        <p class="article-meta">
+                            Tags:{{#each this.tags}}<a href="/tags.html#{{this}}" class="tag">{{this}}</a>{{/each}} | 发布于:{{this.createTime}}
+                        </p>
+                    </li>
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    {{> footer}} {{> footer_plugin}}
+</body>
+
+</html>

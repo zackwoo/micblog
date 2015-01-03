@@ -1,0 +1,12 @@
+{
+    "title": "micblog",
+    "author": "zachary",
+    "city":"上海",
+    "gravatar":"/themes/default/image/icon.gif",
+    "keywords": ["micblog", "zack"],
+    "description": "micblog静态博客系统",
+    "copyright": {
+        "beginYear": 2014,
+        "endYear": 2015
+    }
+}

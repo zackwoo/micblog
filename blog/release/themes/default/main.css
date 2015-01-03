@@ -1,0 +1,111 @@
+ul {
+    list-style: none;
+}
+strong {
+    color: #A40004;
+}
+.h1 {
+    font-size: 2em;
+    color: #555;
+}
+.txt-r{
+    text-align: right;
+}
+/*头尾*/
+
+div.gravatar {
+    padding-top: 50px;
+}
+div.gravatar img {
+    width: 80px;
+    height: 80px;
+    border-radius: 3em;
+}
+div.account {
+    padding-top: 20px;
+}
+div.account ul {
+    padding: 0px;
+}
+div.account span {
+    font-size: 1.2em;
+    font-weight: 700;
+    cursor: pointer;
+}
+div#left-bar span.title {
+    color: #989898;
+    font-size: 1.5em;
+    font-weight: 900;
+    display: block;
+    margin-bottom: 20px;
+}
+div.Category ul {
+    list-style:disc;
+    line-height: 2.2em;
+    color: #989898;
+}
+div.Category ul a{
+    text-decoration: none;
+    color: #4b4b4b;
+}
+footer p#copyright {
+    border-top: 1px solid #ccc;
+    text-align: right;
+}
+header nav,
+footer p#copyright,
+.container {
+    max-width: 110rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container {
+    min-height: 500px;
+}
+/*标签*/
+
+a.tag {
+    padding: 0 5px;
+}
+div.tag-articles-container {
+    margin: 20px 0;
+}
+a.tag-title {
+    font-size: 2em;
+    font-weight: bold;
+}
+a.tag-title:hover {
+    text-decoration: none;
+    color: #0C79B5
+}
+ul.tag-ul {
+    margin-bottom: 30px;
+}
+span.tag-count {
+    padding-left: 3px;
+    font-size: 0.95em;
+}
+/*首页文章列表*/
+li.article-item {
+    border-bottom: 1px dashed #555;
+    margin: 40px 0;
+}
+p.article-meta {
+    color: #999;
+    height: 3em;
+    line-height: 3em;
+    text-align: right;
+}
+/*文章*/
+div.article-nav{
+    margin: 20px 0;
+}
+div.article-nav div.next{
+    text-align: right;
+    border-left: 1px solid #ccc;
+}
+div.article-nav a{
+    color: #333;
+}
