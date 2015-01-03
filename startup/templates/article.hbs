@@ -9,18 +9,20 @@
                 {{> banner}}
             </div>
             <div class="col-md-9">
+                {{#if article.enabletoc}}
                 <div id="toc"></div>
+                {{/if}}
                 <div class="article">
-                     <h1>{{article.title}}</h1>
-                {{{article.content}}}
+                    <h1>{{article.title}}</h1>
+                    {{{article.content}}}
                 </div>
                 <hr>
                 <div class="row article-nav">
                     <div class="col-md-6 prev">
-                        {{#if article.prev}}<i class="fa fa-arrow-left"></i> <a href="/articles/{{article.prev.id}}.html" title="上一篇">{{article.prev.title}}</a> {{/if}}
+                        {{#if article.prev}}<i class="fa fa-arrow-left"></i>  <a href="/articles/{{article.prev.id}}.html" title="上一篇">{{article.prev.title}}</a> {{/if}}
                     </div>
                     <div class="col-md-6 next">
-                        {{#if article.next}} <a href="/articles/{{article.next.id}}.html"  title="下一篇">{{article.next.title}}</a> <i class="fa fa-arrow-right"></i>{{else}}&nbsp;{{/if}}
+                        {{#if article.next}} <a href="/articles/{{article.next.id}}.html" title="下一篇">{{article.next.title}}</a>  <i class="fa fa-arrow-right"></i>{{else}}&nbsp;{{/if}}
                     </div>
                 </div>
                 <div class="article-footer">
