@@ -20,5 +20,10 @@ $(function () {
                 $(this).height(imgh - (margin * ratio));
             }
         });
+
+        /**
+        * @describe add toc
+        */
+         $("#toc").tocify({context:'div.article'});
     })();
 });
