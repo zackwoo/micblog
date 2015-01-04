@@ -6,13 +6,16 @@
     <meta name="description" content="micblog静态博客系统" />
     <meta name="keywords" content="micblog,zack,page" />
     <meta name="author" content="zachary" />
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <meta http-equiv="pragma" content="no-cache" />
     <meta http-equiv="cache-control" content="no-cache" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
     <title>micblog</title>
     <link rel="stylesheet" href="/themes/normalize.css">
-     <!-- toc -->
+    <!-- toc -->
     <link type="text/css" rel="stylesheet" href="/themes/jquery.tocify.css" />
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="/themes/bootstrap/bootstrap.min.css">
@@ -108,6 +111,27 @@
     <span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">footer</span>&gt;</span></span>
 </code></pre>
+<h2 id="navigation-json-">navigation.json 配置说明</h2>
+<p>navigation.json主要负责头部导航菜单信息的配置,数组中每个对象代表一个导航菜单。<br>格式如下：   </p>
+<pre><code class="lang-json">[
+    {
+        "<span class="hljs-attribute">title</span>": <span class="hljs-value"><span class="hljs-string">"主页"</span></span>,
+        "<span class="hljs-attribute">href</span>": <span class="hljs-value"><span class="hljs-string">"/"</span>
+    </span>},
+    {
+        "<span class="hljs-attribute">title</span>": <span class="hljs-value"><span class="hljs-string">"标签"</span></span>,
+        "<span class="hljs-attribute">href</span>": <span class="hljs-value"><span class="hljs-string">"/tags.html"</span>
+    </span>},
+    {
+        "<span class="hljs-attribute">title</span>": <span class="hljs-value"><span class="hljs-string">"关于我"</span></span>,
+        "<span class="hljs-attribute">href</span>": <span class="hljs-value"><span class="hljs-string">"/about.html"</span>
+    </span>}
+]
+</code></pre>
+<h4 id="title-">title 属性</h4>
+<p>导航菜单显示的内容  </p>
+<h4 id="href-">href属性</h4>
+<p>导航地址  </p>
 <h2 id="articles-json-">articles.json 配置说明</h2>
 <p>articles.json主要负责发布文章信息的配置,数组中每个对象代表一篇博文。<br>格式如下：   </p>
 <pre><code class="lang-json">[
