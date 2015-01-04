@@ -14,15 +14,13 @@ strong {
 /*头尾*/
 
 div.gravatar {
+    text-align: center;
     padding-top: 50px;
 }
 div.gravatar img {
     width: 80px;
     height: 80px;
     border-radius: 3em;
-}
-div.account {
-    padding-top: 20px;
 }
 div.account ul {
     padding: 0px;
@@ -32,6 +30,21 @@ div.account span {
     font-weight: 700;
     cursor: pointer;
 }
+div#left-bar{
+    position: fixed;
+}
+div.web-fun {
+    padding-top: 20px;
+}
+a.fun{
+    color: #fff; background-color: #578DBE; height: 30px; width: 30px; line-height: 30px; border-radius: 3em; text-align: center; margin: 0 10px;
+}
+a.fun:hover{
+    color: #fff;
+    text-decoration: none;
+    background-color: #739ABE;
+}
+
 div#left-bar span.title {
     color: #989898;
     font-size: 1.5em;
