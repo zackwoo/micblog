@@ -55,30 +55,6 @@ site.json主要负责网站基本信息的配置,格式如下：
 </footer>
 ```
 
-
-##navigation.json 配置说明
-navigation.json主要负责头部导航菜单信息的配置,数组中每个对象代表一个导航菜单。  
-格式如下：   
-```json
-[
-    {
-        "title": "主页",
-        "href": "/"
-    },
-    {
-        "title": "标签",
-        "href": "/tags.html"
-    },
-    {
-        "title": "关于我",
-        "href": "/about.html"
-    }
-]
-```
-####title 属性
-导航菜单显示的内容  
-####href属性
-导航地址  
 ##articles.json 配置说明
 articles.json主要负责发布文章信息的配置,数组中每个对象代表一篇博文。  
 格式如下：   
