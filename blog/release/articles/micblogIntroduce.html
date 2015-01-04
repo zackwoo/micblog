@@ -81,8 +81,8 @@
 <li>安装<a href="https://www.npmjs.com/">npm</a> (新版node已经集成npm无需独立安装)<br>确认是否安装完成   <pre><code><span class="hljs-built_in">npm</span> -v
 </code></pre>显示版本系信息  </li>
 <li>安装<a href="http://micblog.coding.io/">Micblog</a>   <pre><code>npm <span class="hljs-keyword">install</span> -g micblog
-</code></pre><pre><code><span class="hljs-title">micblog</span> -v
-</code></pre>显示版本系信息  </li>
+</code></pre><pre><code><span class="hljs-title">micblog</span> -V
+</code></pre><em>大写V</em><br>显示版本系信息  </li>
 </ol>
 <p><em>版本信息显示正确即安装完成</em></p>
 <h3 id="micblog-">Micblog 如何创建网站</h3>
@@ -93,8 +93,8 @@
 <p>在当前路径生成一个blog文件夹并包含必要的默认配置信息   </p>
 <h3 id="micblog-">Micblog 如何写作</h3>
 <ol>
-<li>在config/articles.json中配置文章基本信息</li>
-<li>articles下新建对应的Markdown格式的博文文件</li>
+<li>articles下新建Markdown格式的博文文件</li>
+<li>在config/articles.json中配置文章基本信息（如果你不熟悉这些配置，此步骤可跳过，micblog会根据Markdown博文文件动态生成配置）</li>
 </ol>
 <h3 id="micblog-">Micblog 如何生成网站</h3>
 <pre><code><span class="hljs-title">micblog</span> build

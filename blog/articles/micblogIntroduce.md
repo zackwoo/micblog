@@ -22,8 +22,9 @@ npm -v
 npm install -g micblog
 ```   
 ```
-micblog -v
+micblog -V
 ```   
+_大写V_  
 显示版本系信息  
 
 _版本信息显示正确即安装完成_
@@ -41,8 +42,8 @@ init与create拥有相同功能，从1.2.0版本开始加入，并且在生成�
 在当前路径生成一个blog文件夹并包含必要的默认配置信息   
 
 ###Micblog 如何写作  
-1. 在config/articles.json中配置文章基本信息
-2. articles下新建对应的Markdown格式的博文文件
+1. articles下新建Markdown格式的博文文件
+2. 在config/articles.json中配置文章基本信息（如果你不熟悉这些配置，此步骤可跳过，micblog会根据Markdown博文文件动态生成配置）
 
 ###Micblog 如何生成网站  
 ```
