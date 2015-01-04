@@ -27,6 +27,7 @@
     "highlight.js": "^8.4.0",
     "marked": "^0.3.2",
     "moment": "^2.8.4",
+    "pinyin": "^2.3.3",
     "serve-static": "^1.7.1",
     "string": "^3.0.0",
     "underscore": "^1.7.0"
