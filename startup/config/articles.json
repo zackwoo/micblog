@@ -30,7 +30,8 @@
         "enabletoc": true,
         "tags": [
       "micblog"
-    ]
+    ],
+        "top": 2
   },
     {
         "id": "micblogIntroduce",
@@ -39,6 +40,7 @@
         "enabletoc": true,
         "tags": [
       "micblog"
-    ]
+    ],
+        "top": 1
   }
 ]
