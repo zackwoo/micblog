@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@coding.net:zackwoo/Page.git"
+    "url": "git@github.com:zackwoo/micblog.git"
   },
   "keywords": [
     "nodejs",
