@@ -14,7 +14,7 @@
                     <li class="article-item">
                         <a href="/articles/{{this.id}}.html" class="h1">{{this.title}}</a>
                         <p class="article-meta">
-                            Tags:{{#each this.tags}}<a href="/tags.html#{{this}}" class="tag">{{this}}</a>{{/each}} | 发布于:{{this.createTime}}
+                            Tags:{{#each this.tags}}<a href="/tags.html#{{this}}">{{this}}</a>{{/each}} | 发布于:{{this.createTime}}
                         </p>
                     </li>
                     {{/each}}

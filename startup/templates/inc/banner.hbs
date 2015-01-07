@@ -1,15 +1,20 @@
 <div id="left-bar">
     <div class="gravatar">
-        <a href="/"><img src="{{gravatar}}" /></a>
+        <a href="/">
+            <img src="{{gravatar}}" />
+        </a>
     </div>
     <div class="web-fun">
-        <a  href="/" class="fa fa-home fun"></a><a class="fa fa-search fun"></a><a class="fa fa-folder-open fun"></a>
+        <a href="/" class="fa fa-home fun"></a>
+        <a class="fa fa-search fun"></a>
+        <a class="fa fa-folder-open fun"></a>
     </div>
     <hr></hr>
     <div class="account">
         <ul>
-            <li><span><i class="fa fa-map-marker"></i> {{city}}&nbsp;&nbsp;{{author}}</span></li>
-<!--
+            <li><span><i class="fa fa-map-marker"></i> {{city}}&nbsp;&nbsp;{{author}}</span>
+            </li>
+            <!--
             <li><span><i class="fa fa-github"></i> zackwoo</span></li>
             <li><span><i class="fa fa-weibo"></i> 地有油</span></li>
             <li><span><i class="fa fa-qq"></i> MZ</span></li>
@@ -18,16 +23,12 @@
     </div>
     <hr></hr>
     <div class="Category">
-        <span class="title">标签分类</span>
-        <ul>
-            {{#each this.tags}}
-            <li>
-                <a class="tag" href="/tags.html#{{@key}}">
-                {{@key}}<span class="tag-count">×{{this.length}}</span>
-            </a>
-            </li>
-            {{/each}}
-        </ul>
-
+        {{#each this.tags}}
+        <a class="tag" href="/tags.html#{{@key}}">
+            <span><i class="fa fa-tag"></i>
+                {{@key}}
+            </span>
+        </a>
+        {{/each}}
     </div>
 </div>

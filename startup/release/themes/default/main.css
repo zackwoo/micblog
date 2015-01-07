@@ -32,6 +32,7 @@ div.account span {
 }
 div#left-bar{
     position: fixed;
+    width: 160px;
 }
 div.web-fun {
     padding-top: 20px;
@@ -52,15 +53,7 @@ div#left-bar span.title {
     display: block;
     margin-bottom: 20px;
 }
-div.Category ul {
-    list-style:disc;
-    line-height: 2.2em;
-    color: #989898;
-}
-div.Category ul a{
-    text-decoration: none;
-    color: #4b4b4b;
-}
+
 footer p#copyright {
     border-top: 1px solid #ccc;
     text-align: right;
@@ -80,7 +73,17 @@ footer p#copyright,
 /*标签*/
 
 a.tag {
-    padding: 0 5px;
+    padding: 0 10px;
+    display: block;
+    float: left;
+    font-size: 0.9em;
+}
+a.tag:hover{
+    background: #739ABE;
+    font-size: 0.9em;
+     border-radius: 1em;
+    color: #fff;
+    text-decoration: none;
 }
 div.tag-articles-container {
     margin: 20px 0;
