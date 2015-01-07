@@ -1,5 +1,5 @@
 ##Micblog 介绍
-micblog是基于Node.js的静态博客系统。  
+>micblog是基于Node.js的静态博客系统。  
 模板采用Handlebars，同时支持Markdown语法进行写作。  
 micblog的目标是去除一切不必要的功能，让用户可以专注于写作而非复杂的配置与生成动作。  
 
