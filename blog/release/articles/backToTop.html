@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="description" content="micblog静态博客系统" />
-    <meta name="keywords" content="micblog,插件" />
+    <meta name="keywords" content="micblog" />
     <meta name="author" content="zachary" />
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -72,7 +72,8 @@
             <div class="col-md-9">
                 <div class="article">
                     <h1>如何为micblog添加back to top功能</h1>
-                    <p>对于长篇的文章来说当你看到中间或者底部时想返回顶部时可以通过滚动条来完成这个动作。<br>显然使用滚动条并不人性化不够便捷，使用键盘的home键是另一个方案，他的好处是方便快捷。   </p>
+                    <h1 id="-micblog-back-to-top-">如何为micblog添加back to top功能</h1>
+<p>对于长篇的文章来说当你看到中间或者底部时想返回顶部时可以通过滚动条来完成这个动作。<br>显然使用滚动条并不人性化不够便捷，使用键盘的home键是另一个方案，他的好处是方便快捷。   </p>
 <p>虽然使用home键可以很好地满足用户返回页面顶部的需求然后并不是人人知道这个小窍门。<br>由于以上两种方式都有不足的地方，导致很多网站采用javascript的方式来实现回到页面顶部的快捷方式。   </p>
 <h4 id="-micblog-">如何为micblog添加回到顶部功能？</h4>
 <p>其实很简单我们可以利用footer_plugin的扩展点，在footer_plugin文件中加入如下代码即可</p>
