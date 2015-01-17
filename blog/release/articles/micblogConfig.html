@@ -25,12 +25,13 @@
 
     <link rel="stylesheet" href="/themes/highlight.css">
     <link rel="stylesheet" href="/themes/default/main.css">
+    <link rel="stylesheet" href="/themes/plugin/simpletoc/src/toc.css">
 </head>
 
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-2">
                 <div id="left-bar">
                     <div class="gravatar">
                         <a href="/">
@@ -70,7 +71,6 @@
                 </div>
             </div>
             <div class="col-md-9">
-                <div id="toc"></div>
                 <div class="article">
                     <h1>micblog 配置说明</h1>
                     <p>下载micblog后在目录中找到Config目录，该目录下存放了micblog系统需要的所有配置。<br>micblog系统配置采用<strong>严格的JSON格式</strong>。也就说：  </p>
@@ -82,24 +82,28 @@
 <h2 id="site-json-">site.json 配置说明</h2>
 <p>site.json主要负责网站基本信息的配置,格式如下：   </p>
 <pre><code class="lang-json">{
-    "<span class="hljs-attribute">title</span>": <span class="hljs-value"><span class="hljs-string">"网站标题"</span></span>,
+    "<span class="hljs-attribute">site_title</span>": <span class="hljs-value"><span class="hljs-string">"micblog博客小站"</span></span>,
     "<span class="hljs-attribute">author</span>": <span class="hljs-value"><span class="hljs-string">"zachary"</span></span>,
-    "<span class="hljs-attribute">keywords</span>": <span class="hljs-value">[<span class="hljs-string">"关键词1"</span>,<span class="hljs-string">"关键词2"</span>]</span>,
-    "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"网站描述"</span></span>,
+    "<span class="hljs-attribute">city</span>":<span class="hljs-value"><span class="hljs-string">"上海"</span></span>,
+    "<span class="hljs-attribute">gravatar</span>":<span class="hljs-value"><span class="hljs-string">"/themes/default/image/icon.gif"</span></span>,
+    "<span class="hljs-attribute">keywords</span>": <span class="hljs-value">[<span class="hljs-string">"micblog"</span>]</span>,
+    "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"micblog静态博客系统"</span></span>,
     "<span class="hljs-attribute">copyright</span>": <span class="hljs-value">{
         "<span class="hljs-attribute">beginYear</span>": <span class="hljs-value"><span class="hljs-number">2014</span></span>,
         "<span class="hljs-attribute">endYear</span>": <span class="hljs-value"><span class="hljs-number">2015</span>
     </span>}
 </span>}
 </code></pre>
-<h4 id="title-">title 属性</h4>
-<p>网站标题，对应html&gt;head标签内的title标签   </p>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">title</span>&gt;</span>网站标题<span class="hljs-tag">&lt;/<span class="hljs-title">title</span>&gt;</span>
-</code></pre>
+<h4 id="site_title-">site_title 属性</h4>
+<p>网站名称    </p>
 <h4 id="author-">author 属性</h4>
 <p>网站作者，你可将自己的大名写在此处<br>默认对应的html&gt;head标签内的meta author标签，和网页底部copyright的拥有者</p>
 <pre><code class="lang-html">&lt;meta <span class="hljs-variable">name=</span><span class="hljs-string">"author"</span> <span class="hljs-variable">content=</span><span class="hljs-string">"作者"</span> /&gt;
 </code></pre>
+<h4 id="city-">city 属性</h4>
+<p>博主所在城市</p>
+<h4 id="gravatar-">gravatar 属性</h4>
+<p>头像属性</p>
 <h4 id="keywords-">keywords 属性</h4>
 <p>网站关键字属性<br>默认对应的html&gt;head标签内的meta keywords标签   </p>
 <pre><code class="lang-html">&lt;meta <span class="hljs-variable">name=</span><span class="hljs-string">"keywords"</span> <span class="hljs-variable">content=</span><span class="hljs-string">"关键词1,关键词2"</span> /&gt;
@@ -116,42 +120,17 @@
     <span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">footer</span>&gt;</span></span>
 </code></pre>
-<h2 id="navigation-json-">navigation.json 配置说明</h2>
-<p>navigation.json主要负责头部导航菜单信息的配置,数组中每个对象代表一个导航菜单。<br>格式如下：   </p>
-<pre><code class="lang-json">[
-    {
-        "<span class="hljs-attribute">title</span>": <span class="hljs-value"><span class="hljs-string">"主页"</span></span>,
-        "<span class="hljs-attribute">href</span>": <span class="hljs-value"><span class="hljs-string">"/"</span>
-    </span>},
-    {
-        "<span class="hljs-attribute">title</span>": <span class="hljs-value"><span class="hljs-string">"标签"</span></span>,
-        "<span class="hljs-attribute">href</span>": <span class="hljs-value"><span class="hljs-string">"/tags.html"</span>
-    </span>},
-    {
-        "<span class="hljs-attribute">title</span>": <span class="hljs-value"><span class="hljs-string">"关于我"</span></span>,
-        "<span class="hljs-attribute">href</span>": <span class="hljs-value"><span class="hljs-string">"/about.html"</span>
-    </span>}
-]
-</code></pre>
-<h4 id="title-">title 属性</h4>
-<p>导航菜单显示的内容  </p>
-<h4 id="href-">href属性</h4>
-<p>导航地址  </p>
 <h2 id="articles-json-">articles.json 配置说明</h2>
 <p>articles.json主要负责发布文章信息的配置,数组中每个对象代表一篇博文。<br>格式如下：   </p>
 <pre><code class="lang-json">[
     {
         "<span class="hljs-attribute">id</span>": <span class="hljs-value"><span class="hljs-string">"micblogIntroduce"</span></span>,
         "<span class="hljs-attribute">title</span>": <span class="hljs-value"><span class="hljs-string">"micblog 静态博客系统"</span></span>,
-        "<span class="hljs-attribute">createTime</span>": <span class="hljs-value"><span class="hljs-string">"2014-12-26 11:41:37"</span></span>,
-        "<span class="hljs-attribute">tags</span>": <span class="hljs-value">[<span class="hljs-string">"micblog"</span>]
-    </span>},
-    {
-        "<span class="hljs-attribute">id</span>": <span class="hljs-value"><span class="hljs-string">"micblogConfig"</span></span>,
-        "<span class="hljs-attribute">title</span>": <span class="hljs-value"><span class="hljs-string">"micblog 配置说明"</span></span>,
-        "<span class="hljs-attribute">createTime</span>": <span class="hljs-value"><span class="hljs-string">"2014-12-27 19:41:41"</span></span>,
-        "<span class="hljs-attribute">tags</span>": <span class="hljs-value">[<span class="hljs-string">"micblog"</span>]
-    </span>}
+        "<span class="hljs-attribute">createTime</span>": <span class="hljs-value"><span class="hljs-string">"2014-12-26T03:41:37.000Z"</span></span>,
+        "<span class="hljs-attribute">enabletoc</span>": <span class="hljs-value"><span class="hljs-literal">true</span></span>,
+        "<span class="hljs-attribute">tags</span>": <span class="hljs-value">[<span class="hljs-string">"micblog"</span>]</span>,
+        "<span class="hljs-attribute">top</span>": <span class="hljs-value"><span class="hljs-number">1</span>
+     </span>}
 ]
 </code></pre>
 <h4 id="id-">id 属性</h4>
@@ -160,8 +139,36 @@
 <p>博文的标题属性</p>
 <h4 id="createtime-">createTime 属性</h4>
 <p>博文的创建时间</p>
+<h4 id="enabletoc-">enabletoc 属性</h4>
+<p>是否启用TOC(Table Of Contents)功能   </p>
 <h4 id="tags-">tags 属性</h4>
 <p>博文的分类，可以是多个分类</p>
+<h4 id="top-">top 属性</h4>
+<p>置顶属性，采用int值用于排序</p>
+<h2 id="plugin-json-">plugin.json 配置说明</h2>
+<p>plugin.json主要负责第三方插件配置。<br>格式如下：   </p>
+<pre><code class="lang-json">[
+    {
+        "<span class="hljs-attribute">title</span>":<span class="hljs-value"><span class="hljs-string">"toc"</span></span>,
+        "<span class="hljs-attribute">scope</span>":<span class="hljs-value"><span class="hljs-string">"article"</span></span>,
+        "<span class="hljs-attribute">stylesheet</span>":<span class="hljs-value">[<span class="hljs-string">"/themes/plugin/simpletoc/src/toc.css"</span>]</span>,
+        "<span class="hljs-attribute">javascript</span>":<span class="hljs-value">[<span class="hljs-string">"/themes/plugin/simpletoc/libs/jqueryui/jquery-ui-1.9.1.custom.min.js"</span>,<span class="hljs-string">"/themes/plugin/simpletoc/libs/underscore-min.js"</span>,<span class="hljs-string">"/themes/plugin/simpletoc/src/jquery.simpletoc.js"</span>]
+    </span>}
+]
+</code></pre>
+<h4 id="title-">title 属性</h4>
+<p>插件名称<br>默认约定：插件可以在文件夹<em>/templates/plugin</em>内建立 <strong>插件名称_plugin.hbs</strong> 的插件文件</p>
+<h4 id="scope-">scope 属性</h4>
+<p>插件使用的作用域，可用选项[&quot;article&quot;,&quot;page&quot;,&quot;all&quot;]   </p>
+<ul>
+<li>article   用于文章页面的插件</li>
+<li>page  用于除文章页面以外的页面</li>
+<li>all   用于所有页面   </li>
+</ul>
+<h4 id="stylesheet-">stylesheet 属性</h4>
+<p>插件所需要的层叠样式表文件引用地址</p>
+<h4 id="javascript-">javascript 属性</h4>
+<p>插件所需要的javascript脚本文件引用地址</p>
 
                 </div>
                 <hr>
@@ -170,10 +177,8 @@
                         <i class="fa fa-arrow-left"></i>  <a href="/articles/micblogIntroduce.html" title="上一篇">micblog 静态博客系统</a> 
                     </div>
                     <div class="col-md-6 next">
-                         <a href="/articles/backtotop.html" title="下一篇">如何为micblog添加back to top功能</a>  <i class="fa fa-arrow-right"></i>
+                         <a href="/articles/backToTop.html" title="下一篇">如何为micblog添加back to top功能</a>  <i class="fa fa-arrow-right"></i>
                     </div>
-                </div>
-                <div class="article-footer">
                 </div>
             </div>
         </div>
@@ -183,15 +188,21 @@
     <p id="copyright">
         micblog博客小站
         <br>本博客内容采用<a target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>进行许可
-        <br>power by <a target="_blank" href="https://coding.net/u/zackwoo/p/micblog/git">micblog</a> 1.5.0
+        <br>power by <a target="_blank" href="https://coding.net/u/zackwoo/p/micblog/git">micblog</a> 2.0.0
         <br>Copyright (c) 2014-2015
     </p>
 </footer>
 <script src="//libs.baidu.com/jquery/1.8.3/jquery.min.js"></script>
-<script src="/jquery-ui-1.9.1.custom.min.js"></script>
-<script src="/jquery.tocify.min.js"></script>
 <script src="/micblog.js"></script>
- 
+<script src="/themes/plugin/simpletoc/libs/jqueryui/jquery-ui-1.9.1.custom.min.js"></script><script src="/themes/plugin/simpletoc/libs/underscore-min.js"></script><script src="/themes/plugin/simpletoc/src/jquery.simpletoc.js"></script> <script>
+    $(function () {
+        $('div.col-md-9').addClass('col-md-8').removeClass('col-md-9');
+        $('body').toc({
+            selectors: 'h1,h2'
+        });
+    });
+</script>
+
 </body>
 
 </html>

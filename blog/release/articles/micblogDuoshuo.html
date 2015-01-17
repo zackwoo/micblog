@@ -25,12 +25,13 @@
 
     <link rel="stylesheet" href="/themes/highlight.css">
     <link rel="stylesheet" href="/themes/default/main.css">
+    <link rel="stylesheet" href="/themes/plugin/simpletoc/src/toc.css">
 </head>
 
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-2">
                 <div id="left-bar">
                     <div class="gravatar">
                         <a href="/">
@@ -73,12 +74,12 @@
                 <div class="article">
                     <h1>如何让micblog支持评论功能</h1>
                     <p>静态博客没有自己本身的评论交互功能，所以我们选择采用第三方插件的方式来实现评论功能。<br>本文以介绍“多说”为例，演示如何在micblog中安装评论插件。<br>用户也可根据自身需要换成其他同类插件。   </p>
-<h3 id="-">先决条件</h3>
+<h2 id="-">先决条件</h2>
 <ol>
 <li>micblog为1.0.6以上版本  </li>
 <li>注册“多说”账号并开通站点获取代码，如下图<br><img src="http://7tebg3.com1.z0.glb.clouddn.com/duoshuo.png" alt="代码">  </li>
 </ol>
-<h3 id="-micblog">配置micblog</h3>
+<h2 id="-micblog">配置micblog</h2>
 <ol>
 <li><p>修改templates/inc/article_footer.hbs<br>将“多说”代码黏贴进去同时修改如下<br><img src="http://7tebg3.com1.z0.glb.clouddn.com/多说2.png" alt="设置修改">  </p>
 </li>
@@ -91,13 +92,11 @@
                 <hr>
                 <div class="row article-nav">
                     <div class="col-md-6 prev">
-                        <i class="fa fa-arrow-left"></i>  <a href="/articles/backtotop.html" title="上一篇">如何为micblog添加back to top功能</a>
+                        <i class="fa fa-arrow-left"></i>  <a href="/articles/backToTop.html" title="上一篇">如何为micblog添加back to top功能</a>
                     </div>
                     <div class="col-md-6 next">
                          <a href="/articles/micblogDeploy.html" title="下一篇">如何部署到coding.net</a>  <i class="fa fa-arrow-right"></i>
                     </div>
-                </div>
-                <div class="article-footer">
                 </div>
             </div>
         </div>
@@ -107,15 +106,13 @@
     <p id="copyright">
         micblog博客小站
         <br>本博客内容采用<a target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>进行许可
-        <br>power by <a target="_blank" href="https://coding.net/u/zackwoo/p/micblog/git">micblog</a> 1.5.0
+        <br>power by <a target="_blank" href="https://coding.net/u/zackwoo/p/micblog/git">micblog</a> 2.0.0
         <br>Copyright (c) 2014-2015
     </p>
 </footer>
 <script src="//libs.baidu.com/jquery/1.8.3/jquery.min.js"></script>
-<script src="/jquery-ui-1.9.1.custom.min.js"></script>
-<script src="/jquery.tocify.min.js"></script>
 <script src="/micblog.js"></script>
- 
+<script src="/themes/plugin/simpletoc/libs/jqueryui/jquery-ui-1.9.1.custom.min.js"></script><script src="/themes/plugin/simpletoc/libs/underscore-min.js"></script><script src="/themes/plugin/simpletoc/src/jquery.simpletoc.js"></script>
 </body>
 
 </html>

@@ -1,4 +1,5 @@
-###打造属于你个人的blog
+#如何部署到coding.net
+##打造属于你个人的blog
 Micblog配合利用coding.net提供的在线演示我们可以很方便的搭建属于您个人的专属Blog。   
 
 

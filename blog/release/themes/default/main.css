@@ -124,7 +124,9 @@ p.article-meta {
     text-align: right;
 }
 /*文章*/
-
+.article ul{
+    list-style: disc
+}
 div.article-nav {
     margin: 20px 0;
 }

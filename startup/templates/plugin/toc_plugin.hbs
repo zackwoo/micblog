@@ -1,0 +1,10 @@
+{{#if enabletoc}}
+<script>
+    $(function () {
+        $('div.col-md-9').addClass('col-md-8').removeClass('col-md-9');
+        $('body').toc({
+            selectors: 'h1,h2'
+        });
+    });
+</script>
+{{/if}}

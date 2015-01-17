@@ -5,13 +5,10 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-2">
                 {{> banner}}
             </div>
             <div class="col-md-9">
-                {{#if article.enabletoc}}
-                <div id="toc"></div>
-                {{/if}}
                 <div class="article">
                     <h1>{{article.title}}</h1>
                     {{{article.content}}}
@@ -25,14 +22,11 @@
                         {{#if article.next}} <a href="/articles/{{article.next.id}}.html" title="下一篇">{{article.next.title}}</a>  <i class="fa fa-arrow-right"></i>{{else}}&nbsp;{{/if}}
                     </div>
                 </div>
-                <div class="article-footer">
-                    {{> article_footer_plugin article}}
-                </div>
             </div>
         </div>
 
     </div>
-    {{> footer}} {{> footer_plugin}}
+    {{> footer}} {{> toc_plugin article}}
 </body>
 
 </html>
