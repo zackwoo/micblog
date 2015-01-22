@@ -31,7 +31,8 @@
     "pinyin": "^2.3.3",
     "serve-static": "^1.7.1",
     "string": "^3.0.0",
-    "underscore": "^1.7.0"
+    "underscore": "^1.7.0",
+    "winston": "^0.8.3"
   },
   "devDependencies": {
     "chai": "^1.10.0",
