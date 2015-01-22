@@ -3,6 +3,6 @@
         "title":"toc",
         "scope":"article",
         "stylesheet":["/themes/plugin/simpletoc/src/toc.css"],
-        "javascript":["/themes/plugin/simpletoc/libs/jqueryui/jquery-ui-1.9.1.custom.min.js","/themes/plugin/simpletoc/libs/underscore-min.js","/themes/plugin/simpletoc/src/jquery.simpletoc.js"]
+        "javascript":["/themes/plugin/simpletoc/libs/jqueryui/jquery-ui-1.9.1.custom.min.js","/themes/plugin/simpletoc/libs/underscore-min.js","/themes/plugin/simpletoc/src/jquery.simpletoc.min.js"]
     }
 ]

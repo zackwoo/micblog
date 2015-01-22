@@ -1,6 +1,7 @@
 /**
  * jquery toc plugin
  * -v 1.0.0
+ * -src https://github.com/zackwoo/SimpleTOC
  * -create time 2015-1-9
  * Copyright (c) 2015 zachary woo
  * Licensed MIT
@@ -16,13 +17,11 @@
             idSeed = [0, 0, 0];
         // Calling the jQueryUI Widget Factory Method
         $.widget("mcblog.toc", {
-
             //Plugin version
             version: "1.0.0",
 
             // selectors最高支持3级
             options: {
-                context: "body",
                 selectors: "h1, h2, h3"
             },
             _create: function () {
@@ -34,16 +33,18 @@
             },
             _filterSelectors: function () {
                 var self = this;
-                items = $(self.options.context).find(self.options.selectors);
+                items = self.element.find(self.options.selectors);
             },
             _getLevel: function (dom) {
                 //判断元素标签级别
                 var self = this;
                 var selectors = self.options.selectors.replace(/ /g, "").toLocaleLowerCase();
-                var temp = selectors.split(",");
-                var tagName = $(dom).prop("tagName").toLocaleLowerCase();
-
-                return temp.indexOf(tagName);
+                var idx =-1;
+                $.each(selectors.split(","),function(index,item){
+                    if($(dom).is(item))
+                        idx=index;
+                });
+                return idx;
             },
             _generateId: function (dom) {
                 var self = this,
@@ -111,7 +112,7 @@
                 $('<div class="sideToolbar" id="sideToolbar"/>')
                     .append($siteCatalog)
                     .append('<a href="javascript:void(0);" id="sideCatalogBtn"></a>')
-                    .appendTo(self.options.context);
+                    .appendTo('body');
 
                 //添加页面扩展extend满足最后一个目录可以滚动到页面顶部
                 var lastItem = items[items.length - 1];
@@ -120,7 +121,7 @@
                 if (extendHeight > 0) {
                     $('<div/>', {
                         height: extendHeight
-                    }).appendTo('body');
+                    }).appendTo(self.element);
                 }
             },
             _bindEvent: function () {
@@ -256,12 +257,11 @@
                     var tmp = count - idx - 1 - 6; //不够移动至中间位置时的差值
                     if (tmp < 0) {
                         newDlTop += (Math.abs(tmp) * 25);
+
                     }
-                } else if (newDlTop > dlTop) {
-                    //向下移
-                    if (newDlTop > 0)
-                        newDlTop = 0;
                 }
+                if (newDlTop > 0)
+                        newDlTop = 0;
 
                 if (newDlTop < 0)
                     $('#sideCatalog-up').removeClass('sideCatalog-up-disable').addClass('sideCatalog-up-enable')
