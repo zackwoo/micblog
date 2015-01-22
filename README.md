@@ -4,6 +4,8 @@
 
 
 micblog项目Blog地址：<http://micblog.coding.io/>  
+代码托管： [Github](https://github.com/zackwoo/micblog)   
+国内镜像： [coding](https://coding.net/u/zackwoo/p/micblog/git)   
 
 ##目录
 * [介绍](#介绍)
