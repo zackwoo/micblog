@@ -24,6 +24,11 @@ site.json主要负责网站基本信息的配置,格式如下：
 ####site_title 属性
 网站名称    
 
+
+####domain 属性
+博客的域名，目前主要用于借助Google作为定向搜索    
+
+
 ####author 属性
 网站作者，你可将自己的大名写在此处   
 默认对应的html>head标签内的meta author标签，和网页底部copyright的拥有者

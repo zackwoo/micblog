@@ -36,11 +36,14 @@ div.account span {
 div#left-bar {
     position: fixed;
     width: 160px;
+    overflow: hidden;
+    height: 100%;
 }
 div.web-fun {
     padding-top: 20px;
 }
 a.fun {
+    cursor: pointer;
     color: #fff;
     background-color: #578DBE;
     height: 30px;
@@ -62,6 +65,15 @@ div#left-bar span.title {
     display: block;
     margin-bottom: 20px;
 }
+#Category,#Search{
+    position: absolute;
+    width: 160px;
+}
+#Search{
+    left: -162px;
+    width: 160px;
+}
+
 footer p#copyright {
     border-top: 1px solid #ccc;
     text-align: right;

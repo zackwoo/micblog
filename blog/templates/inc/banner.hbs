@@ -7,22 +7,17 @@
     <div class="web-fun">
         <a href="/" class="fa fa-home fun"></a>
         <a class="fa fa-search fun"></a>
-        <a class="fa fa-folder-open fun"></a>
+        <a class="fa fa-tag fun"></a>
     </div>
     <hr></hr>
     <div class="account">
         <ul>
             <li><span><i class="fa fa-map-marker"></i> {{city}}&nbsp;&nbsp;{{author}}</span>
             </li>
-            <!--
-            <li><span><i class="fa fa-github"></i> zackwoo</span></li>
-            <li><span><i class="fa fa-weibo"></i> 地有油</span></li>
-            <li><span><i class="fa fa-qq"></i> MZ</span></li>
--->
         </ul>
     </div>
     <hr></hr>
-    <div class="Category">
+    <div id="Category">
         {{#each this.tags}}
         <a class="tag" href="/tags.html#{{@key}}">
             <span><i class="fa fa-tag"></i>
@@ -30,5 +25,13 @@
             </span>
         </a>
         {{/each}}
+    </div>
+    <div id="Search">
+        <div class="input-group">
+            <input type="text" class="form-control" id="search-ctrl" data-domain="{{domain}}">
+            <span class="input-group-btn">
+                <button class="btn btn-default" type="button" id="search-btn"><span class="fa fa-search" aria-hidden="true"></span></button>
+            </span>
+        </div>
     </div>
 </div>
