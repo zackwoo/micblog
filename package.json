@@ -22,6 +22,7 @@
   "dependencies": {
     "commander": "^2.6.0",
     "connect": "^3.3.3",
+    "file-compare": "0.0.2",
     "fs-extra": "^0.13.0",
     "handlebars": "^2.0.0",
     "highlight.js": "^8.4.0",
