@@ -86,6 +86,7 @@ micblog test
 
 ###如何更新版本     
 ```
+npm update -g micblog
 micblog update
 ```  
 将micblog更新至最新版本   
