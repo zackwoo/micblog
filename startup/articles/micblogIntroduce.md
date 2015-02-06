@@ -45,7 +45,8 @@ init与create拥有相同功能，从1.2.0版本开始加入，并且在生成�
 ##如何写作  
 1. articles下新建Markdown格式的文件以Markdown语法写作
 2. Markdown文件第一行默认约定为以#开头的一级标题
-3. 在config/articles.json中可手动修改文章基本信息
+3. Markdown文件默认约定元属性，每行一个属性，格式： “:属性:值”
+4. 在config/articles.json中可手动修改文章基本信息
 
 ##如何生成网站  
 ```
