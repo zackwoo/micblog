@@ -1,12 +1,31 @@
-#micblog 静态博客系统
+#Micblog 静态博客系统
+[![NPM Version](http://img.shields.io/npm/v/micblog.svg?style=flat)](https://www.npmjs.org/package/micblog)
+[![NPM Downloads](https://img.shields.io/npm/dm/micblog.svg?style=flat)](https://www.npmjs.org/package/micblog)
 
-##介绍
+
+micblog项目Blog地址：<http://micblog.coding.io/>  
+代码托管： [Github](https://github.com/zackwoo/micblog)   
+国内镜像： [coding](https://coding.net/u/zackwoo/p/micblog/git)   
+
+##目录
+* [介绍](#介绍)
+* [如何安装](#如何安装)
+* [如何创建网站](#如何创建网站)
+* [如何写作](#如何写作)
+* [如何生成网站](#如何生成网站)
+* [如何预览网站](#如何预览网站)
+* [如何免费部署个人站点](#如何免费部署个人站点)
+* [如何安装插件](#如何安装插件)
+* [如何更新版本](#如何更新版本)
+
+
+###介绍
 micblog是基于Node.js的静态博客系统。  
 模板采用Handlebars，同时支持Markdown语法进行写作。  
 micblog的目标是去除一切不必要的功能，让用户可以专注于写作而非复杂的配置与生成动作。  
 
 
-##如何安装
+###如何安装
 1. 安装[node.js](http://nodejs.org/)    
 确认是否安装完成   
 ```
@@ -30,7 +49,7 @@ micblog -v
 
 _版本信息显示正确即安装完成_
 
-##如何创建网站  
+###如何创建网站  
 ```
 micblog create
 ```
@@ -38,37 +57,40 @@ micblog create
 ```
 micblog init
 ```   
+_-t 可选项 启动测试服务器预览网站_   
 init与create拥有相同功能，从1.2.0版本开始加入，并且在生成完后自动执行build命令   
 
 在当前路径生成一个blog文件夹并包含必要的默认配置信息   
 
-##如何写作  
+###如何写作  
 1. articles下新建Markdown格式的文件以Markdown语法写作
 2. Markdown文件第一行默认约定为以#开头的一级标题
 3. Markdown文件默认约定元属性，每行一个属性，格式： “:属性:值”
 4. 在config/articles.json中可手动修改文章基本信息
 
-##如何生成网站  
+###如何生成网站  
 ```
 micblog build
 ```   
+_-t 可选项 启动测试服务器预览网站_   
 在当前路径blog文件夹中生网站，所有生成结果保存在blog/release文件夹中   
 
-##如何预览网站  
-```
-micblog test
-```   
+###如何预览网站  
+* micblog build -t   
+* micblog update -bt   
 启动浏览器打开 http://localhost:8001/ 可浏览网站效果   
 
-##如何免费部署个人站点  
+###如何免费部署个人站点  
 请参考[micblog 部署到coding.net](http://micblog.coding.io/articles/micblogDeploy.html)   
 
-##如何安装插件
+###如何安装插件
 请参考[项目博客#插件](http://micblog.coding.io/tags.html#%E6%8F%92%E4%BB%B6)   
 
-##如何更新版本     
+###如何更新版本     
 ```
 npm update -g micblog
 micblog update
 ```  
+_-b 可选项 编译网站_   
+_-t 可选项 启动测试服务器预览网站_   
 将micblog更新至最新版本   

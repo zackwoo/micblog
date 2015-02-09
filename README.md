@@ -57,6 +57,7 @@ micblog create
 ```
 micblog init
 ```   
+_-t 可选项 启动测试服务器预览网站_   
 init与create拥有相同功能，从1.2.0版本开始加入，并且在生成完后自动执行build命令   
 
 在当前路径生成一个blog文件夹并包含必要的默认配置信息   
@@ -71,12 +72,12 @@ init与create拥有相同功能，从1.2.0版本开始加入，并且在生成�
 ```
 micblog build
 ```   
+_-t 可选项 启动测试服务器预览网站_   
 在当前路径blog文件夹中生网站，所有生成结果保存在blog/release文件夹中   
 
 ###如何预览网站  
-```
-micblog test
-```   
+* micblog build -t   
+* micblog update -bt   
 启动浏览器打开 http://localhost:8001/ 可浏览网站效果   
 
 ###如何免费部署个人站点  
@@ -90,4 +91,6 @@ micblog test
 npm update -g micblog
 micblog update
 ```  
+_-b 可选项 编译网站_   
+_-t 可选项 启动测试服务器预览网站_   
 将micblog更新至最新版本   
