@@ -1,0 +1,24 @@
+{{#if enabled}}
+<nav>
+	<ul class="pager">
+	{{#if disabledPrev}}
+		<li class="previous disabled">
+			<a href="javascript:void(0)">上一页</a>
+		</li>
+	{{else}}
+		<li class="previous">
+			<a href="{{previous}}">上一页</a>
+		</li>
+	{{/if}}
+	{{#if disabledNext}}
+		<li class="next disabled">
+			<a href="javascript:void(0)">下一页</a>
+		</li>
+	{{else}}
+		<li class="next">
+			<a href="{{next}}">下一页</a>
+		</li>
+	{{/if}}
+    </ul>
+</nav>
+{{/if}}

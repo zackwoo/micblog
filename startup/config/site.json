@@ -9,5 +9,9 @@
     "copyright": {
         "beginYear": 2014,
         "endYear": 2015
+    },
+    "paging":{
+        "size":3,
+        "enabled":false
     }
 }

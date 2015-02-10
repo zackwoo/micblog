@@ -149,3 +149,7 @@ div.article-nav div.next {
 div.article-nav a {
     color: #333;
 }
+/*分页*/
+.pager{
+    padding-left: 40px !important;
+}
